@@ -514,15 +514,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     updateAvalancheEffect();
-
-    /* ====================================================================
-       5. VIVA ACCORDION
-       ==================================================================== */
-    const vivaQuestions = document.querySelectorAll('.viva-question');
-    vivaQuestions.forEach(q => {
-        q.addEventListener('click', () => {
-            const item = q.parentElement;
-            item.classList.toggle('open');
-        });
-    });
 });

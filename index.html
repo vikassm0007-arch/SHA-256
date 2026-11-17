@@ -47,9 +47,6 @@
                 <button type="button" class="mode-tab-btn" data-target="tab-avalanche">
                     <i class="fa-solid fa-bolt"></i> 5. Avalanche Effect
                 </button>
-                <button type="button" class="mode-tab-btn" data-target="tab-viva">
-                    <i class="fa-solid fa-graduation-cap"></i> 6. Viva Prep
-                </button>
             </nav>
         </div>
     </header>
@@ -569,80 +566,6 @@
                     <div style="margin-top: 0.85rem;">
                         <span style="font-size: 0.8rem; color: var(--text-dim); font-weight: 600;">Hash B (Red letters show positions that changed completely):</span>
                         <div class="avalanche-diff-box" id="avalanche-hash-b">Computing...</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
-             PANE 6: COLLEGE VIVA & EXAM GUIDE
-             ========================================== -->
-        <section id="tab-viva" class="content-pane">
-            <div class="feature-card">
-                <div class="card-header">
-                    <div class="card-title-group">
-                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <div>
-                            <h3 class="card-title">Top 5 Viva Questions & Simple Answers</h3>
-                        </div>
-                    </div>
-                    <span class="card-tag">Exam Preparation</span>
-                </div>
-                <div class="card-body">
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">
-                        These are the most common questions college evaluators ask in a Cryptography & Network Security mini-project exam. Click any question to see the clear, simple answer:
-                    </p>
-
-                    <div class="viva-item open">
-                        <div class="viva-question">
-                            <span>1. What is the difference between Hashing and Encryption?</span>
-                            <i class="fa-solid fa-chevron-down viva-icon"></i>
-                        </div>
-                        <div class="viva-answer">
-                            <strong>Hashing is one-way:</strong> It turns data into a fixed-length fingerprint that cannot be reversed or decrypted (used for passwords & integrity).<br>
-                            <strong>Encryption is two-way:</strong> It turns plaintext into ciphertext with a secret key, and can be decrypted back into plaintext using the key (used for confidential messages & VPNs).
-                        </div>
-                    </div>
-
-                    <div class="viva-item">
-                        <div class="viva-question">
-                            <span>2. Why does SHA-256 always give 64 characters?</span>
-                            <i class="fa-solid fa-chevron-down viva-icon"></i>
-                        </div>
-                        <div class="viva-answer">
-                            SHA-256 produces a digest of exactly 256 binary bits. When written in hexadecimal notation (base 16), each character represents 4 bits ($2^4 = 16$). Therefore:
-                            <br><strong>256 bits &divide; 4 bits per character = 64 hexadecimal characters</strong>.
-                        </div>
-                    </div>
-
-                    <div class="viva-item">
-                        <div class="viva-question">
-                            <span>3. Why can't someone reverse a SHA-256 hash?</span>
-                            <i class="fa-solid fa-chevron-down viva-icon"></i>
-                        </div>
-                        <div class="viva-answer">
-                            SHA-256 uses non-linear bitwise logic (AND, XOR, bit rotations, modulo $2^{32}$ additions) that intentionally compress and discard information. Trying to reverse it requires testing $2^{256}$ combinations by brute force, which would take more time and energy than the entire universe possesses!
-                        </div>
-                    </div>
-
-                    <div class="viva-item">
-                        <div class="viva-question">
-                            <span>4. What is a "Hash Collision"?</span>
-                            <i class="fa-solid fa-chevron-down viva-icon"></i>
-                        </div>
-                        <div class="viva-answer">
-                            A collision happens when two completely different inputs produce the exact same hash output. While theoretically possible because inputs are infinite and outputs are $2^{256}$, the chance of finding two colliding inputs in SHA-256 by chance is virtually zero. To this day, zero collisions have ever been found in SHA-256.
-                        </div>
-                    </div>
-
-                    <div class="viva-item">
-                        <div class="viva-question">
-                            <span>5. What is the Avalanche Effect and why is it important?</span>
-                            <i class="fa-solid fa-chevron-down viva-icon"></i>
-                        </div>
-                        <div class="viva-answer">
-                            The Strict Avalanche Criterion (SAC) means that if you change just 1 bit in your input, approximately 50% of the bits in the output hash will flip. This guarantees that an attacker cannot guess passwords or original data based on similar-looking hashes.
-                        </div>
                     </div>
                 </div>
             </div>

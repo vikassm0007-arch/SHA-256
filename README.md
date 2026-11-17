@@ -32,7 +32,6 @@ The application features a clean, tabbed navigation bar allowing you to explore 
 | **3. File Checksum** | Drag and drop any file (`.pdf`, `.png`, `.zip`, `.exe`) to compute its digital fingerprint in RAM. | Demonstrates software download verification and malware detection. |
 | **4. Tamper Detector** | Compares two hashes side-by-side with a 🟢 **MATCH** or 🔴 **MISMATCH** alert, plus a *"Simulate Hacker Tampering"* button! | Demonstrates cryptographic data integrity and man-in-the-middle detection. |
 | **5. Avalanche Effect** | Side-by-side comparison where changing 1 letter flips $\approx 50\%$ of all bits in the output hash. | Demonstrates the Strict Avalanche Criterion (SAC) and Shannon diffusion. |
-| **6. Viva Prep** | Top 5 viva exam questions and plain-English answers for university evaluations. | Helps students ace their college mini-project presentation. |
 
 ---
 
